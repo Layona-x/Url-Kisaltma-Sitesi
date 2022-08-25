@@ -1,4 +1,4 @@
- <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -6,7 +6,7 @@
 </head>
 <body>
 <%- include('../partials/navbar.ejs') -%>
-<form class="row g-3" method="POST" action="/register">
+<form class="row g-3" method="POST" action="/login">
   <div class="col-10">
     <label class="form-label">İsim</label>
     <input type="text" name="username" class="form-control" placeholder="İsminizi Giriniz">
@@ -16,9 +16,9 @@
     <input type="password" class="form-control" name="password" placeholder="Şifrenizi Giriniz">
   </div>
   <div class="col-12">
-    <button type="submit" class="btn btn-primary">Register</button>
+    <button type="submit" class="btn btn-primary">Login</button>
     </form>
-    <a href="/login" class="btn btn-primary">Login</a>
+  <a href="/register" class="btn btn-info">Register</a>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
  
@@ -29,6 +29,6 @@
       padding:0;
     }
     .form-control{
-      width:80%
+      width:95%
     }
   </style>
